@@ -35,6 +35,8 @@ function dateCheck(){
     console.log(finalDate);
         if(finalDate[1] > 31){
             failure.classList.toggle('hidden')
+        }else if(finalDate[1] < 0){
+            failure.classList.toggle('hidden')        
         }else if(finalDate[0]== 'MARCH' && finalDate[1] >= 21 || finalDate[0] == 'APRIL' && finalDate[1] <= 19  ){
             aries.classList.toggle('hidden')
         }else if (finalDate[0] == 'APRIL' && finalDate[1] >= 20 || finalDate[0] == 'MAY' && finalDate[1] <=20 ){
