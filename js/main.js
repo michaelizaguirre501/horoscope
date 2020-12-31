@@ -31,8 +31,11 @@ function dateCheck(){
     finalDate.push(m);
     d = parseInt(document.querySelector('#day').value);
     finalDate.push(d);
+    
     console.log(finalDate);
-        if(finalDate[0]== 'MARCH' && finalDate[1] >= 21 || finalDate[0] == 'APRIL' && finalDate[1] <= 19  ){
+        if(finalDate[1] > 31){
+            failure.classList.toggle('hidden')
+        }else if(finalDate[0]== 'MARCH' && finalDate[1] >= 21 || finalDate[0] == 'APRIL' && finalDate[1] <= 19  ){
             aries.classList.toggle('hidden')
         }else if (finalDate[0] == 'APRIL' && finalDate[1] >= 20 || finalDate[0] == 'MAY' && finalDate[1] <=20 ){
             taurus.classList.toggle('hidden')
@@ -59,6 +62,8 @@ function dateCheck(){
         }else{
             failure.classList.toggle('hidden')
     }
+    
+    
         
     return false;
 
