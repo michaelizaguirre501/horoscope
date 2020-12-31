@@ -27,6 +27,22 @@ document.querySelector('#checkButton').addEventListener('click', dateCheck)
 document.querySelector('#resetButton').addEventListener('click', reset)
 
 function dateCheck(){
+    finalDate.length = 0 ;
+    failure.classList.add('hidden');
+    aries.classList.add('hidden');
+    taurus.classList.add('hidden');
+    gemini.classList.add('hidden');
+    cancer.classList.add('hidden');
+    leo.classList.add('hidden');
+    virgo.classList.add('hidden');
+    libra.classList.add('hidden');
+    scorpio.classList.add('hidden');
+    sagittarius.classList.add('hidden');
+    capricorn.classList.add('hidden');
+    aquarius.classList.add('hidden');
+    pisces.classList.add('hidden');
+
+    
     m = document.querySelector('#month').value.toUpperCase().trim();
     finalDate.push(m);
     d = Number((document.querySelector('#day').value));
@@ -66,7 +82,7 @@ function dateCheck(){
     }
     
     
-    finalDate.length=0;    
+      
     return false;
 
 
