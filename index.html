@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="A simple horoscope app">
+    	<meta name="keywords" content="Horoscope, scorpio, aquarius, izzy">
+
+		<title>Horoscope</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Droid+Sans" />  
+		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Days+One" />
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<!-- <header>Put a back button here</header> -->
+		<h1>Sith Horoscope</h1>
+		<p>Enter your Birthday</p>
+		<section class='input'>
+			<input id = 'month' type="text" placeholder='Month'>
+			<input id = 'day' type="text" placeholder='Date'>
+		</section>
+		<section>
+			<button id='checkButton'>Let The Hate Flow Through You</button>
+			<button id='resetButton' >Reset</button>
+		</section>
+
+		<section id='display'>
+			<section id='resultImg' ></section>
+
+			<section class='aries hidden'>
+				<img src="img/maul.jpg" alt="Image of Darth Maul">
+				<p>Darth Maul</p>
+				<p>Darth Maul is undoubtedly one of the most frightening Sith in the history of the Star Wars universe, and he embodies the spirit of an Aries perfectly. While people like Palpatine are more than happy coming up with elaborate plans, it's the Darth Mauls of the world that are actually going out and getting things done. That can-do attitude (and the belief that he can accomplish anything and defeat any foe) is quintessential Aries.</p>
+			</section>
+
+			<section class='taurus hidden'>
+				<img src="img/Plagueis.jpg" alt="Image of Darth Plagueis">
+				<p>Darth Plagueis</p>
+				<p>Despite being an incredible master of the Force, Darth Plagueis was actually much more practical and goal-oriented than most Sith in Star Wars history. Darth Plagueis was obsessed with the idea of eternal life, and he devoted his entire existence to achieving that goal without letting anything stand in his way. That intense focus and unstoppable determination is very much a Taurus way of doing things.</p>
+			</section>
+
+			<section class='gemini hidden'>
+				<img src="img/dooku.jpg" alt="Image of Count Dooku">
+				<p>Count Dooku</p>
+				<p>Geminis have an unfairly negative reputation for being two-faced, and that reputation is driven by the fact that they are mostly extremely complex individuals with broad interests and ideas, and they have a great knack for knowing which sides of themselves to show at which times.</p>
+			</section>
+
+
+			<section class='cancer hidden'>
+				<img src="img/vader.jpg" alt="Image of Darth Vader">
+				<p>Darth Vader</p>
+				<p>Cancers are a water sign, and water is the element of emotion. Cancer might just be the most emotional sign of them all, they can be very caring and loving but they are also prone to mood swings and unpredictable emotional fluctuations.  They're also incredibly loyal people, which is why the constantly conflicted but fiercely loyal Darth Vader is their perfect Star Wars Sith.</p>
+			</section>
+
+
+			<section class='leo hidden'>
+				<img src="img/nihilus.jpg" alt="Image of Darth Nihilus">
+				<p>Darth Nihilus </p>
+				<p>Darth Nihilus actually has a fascinating backstory that understandably informs the person that he became, but what makes him stand out the most is his insatiable desire for power and his willingness to strike out on his own and carve his own path.	That is very much Leo's style, as they truly feel like they deserve to be at the top of whatever game they choose, and they're leaders instead of followers.</p>
+			</section>
+
+
+			<section class='virgo hidden'>
+				<img src="img/malak.jpg" alt="Image of Darth Malak">
+				<p>Darth Malak</p>
+				<p>Virgos can often be one of the most practical signs while also being very kind and idealistic, which is why they could easily relate to someone like Darth Malak.	Malak began his journey as a hopeful young Jedi, but when he felt that the Jedi Order was ineffective and not adhering to their own ideals, he became a Sith in the hopes of making the world more like he wanted it to be.</p>
+			</section>
+
+
+			<section class='libra hidden'>
+				<img src="img/ventress.jpg" alt="Image of Asajj Ventress">
+				<p>Asajj Ventress</p>
+				<p>Asajj Ventress is an extremely intelligent person who is experienced in both the light and dark sides of the Force. That inner duality as well as her natural smarts makes her a great analog for a classic Libra, as Librans are exceptionally clever and love exploring new ideas, but as people who always want to keep things in balance, they can have a hard time committing to one thing over another.</p>
+			</section>
+
+
+			<section class='scorpio hidden'>
+				<img src="img/palpatine.jpg" alt="All Hail The Emperor">
+				<p>Emperor Palpatine</p>
+				<p>Scorpios have a reputation for being one of the most intimidating signs of the zodiac, and it's a reputation that's well earned. But where Scorpios can relate to Palpatine the most is in their ability to play the long game. Scorpios are masters at seeing the bigger picture and they are willing to wait and work for what they get, whether it's power or revenge.</p>
+			</section>
+
+
+			<section class='sagittarius hidden'>
+				<img src="img/ren.jpg" alt="Image of Kylo Ren">
+				<p>Kylo Ren</p>
+				<p>Kylo Ren may not have technically been a Sith, but he clearly modeled his life and relationship with Snoke off of the Sith traditions, and he wanted to become one of the most powerful dark Force users in the galaxy.	Like a Sagittarius, Kylo could be aggressive, but there was also a soft side to him that he couldn't get rid of, and like a Sag, he wasn't skilled at holding in his negative or positive emotions.</p>
+			</section>
+
+
+			<section class='capricorn hidden'>
+				<img src="img/bane.jpg" alt="Image of Darth Bane">
+				<p>Darth Bane</p>
+				<p>Capricorns are one of the strongest signs of the zodiac, and they build their strength on rules and traditions. So a Sith lord like Darth Bane, the man who essentially rebuilt the Sith order into what it became and instituted the Rule of Two, is very easy for a Capricorn to relate to and understand.</p>
+			</section>
+
+
+			<section class='aquarius hidden'>
+				<img src="img/revan.jpg" alt="Image of Darth Revan">
+				<p>Darth Revan</p>
+				<p>Aquarians are best known for their ferocious independent streak, as they have lots of trouble following rules and have an intense need to do exactly what they think they should, regardless of what anyone else thinks. Darth Revan, a Jedi who disobeyed the Jedi Order and went up against the Mandalorians before turning to the dark side and becoming a Sith, would have certainly been an Aquarius.</p>
+			</section>
+
+
+			<section class='pisces hidden'>
+				<img src="img/opress.jpg" alt="Image of Savage Opress">
+				<p>Savage Opress</p>
+				<p>Pisces is known as the most otherworldly and mystical sign. That connection to the psychic world seems to mimic the feral, powerful connection to the Force that Savage Opress had. Pisces is also known for being very emotional and empathetic, but sometimes too trusting, which suits Savage as well.</p>
+			</section>
+
+			<section class='failure hidden'>
+				<img src="img/failure.gif" alt="">
+				<p>You Have Failed Me For The Last Time</p>
+				<p>Try Another Date</p>
+			</section>
+
+		
+		
+		</section>
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
