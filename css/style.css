@@ -1,0 +1,86 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+html{
+  background-image:url(/img/stars.jpg) ;
+}
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+h1{
+  font-family: 'Days One'; 
+	font-size: 50px;
+  color: red;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 100;
+  line-height: 22px;
+  text-align: center;
+  margin-top: 20px;
+  text-shadow: 2px 2px white ,2px 2px white;
+}
+p{
+
+    font-family: 'Days One';
+    font-size: 30px;
+    color: #FFFFFF;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 46.4px;
+    text-align: center;
+    margin-top: 50px;
+}
+section{
+  text-align: center;
+}
+input{
+  font-family: 'Days One';
+    font-size: 30px;
+}
+button{
+  font-family: 'Days One';
+  font-size: 30px;
+  margin-top:50px ;
+  color: red;
+  background:black;
+  border:solid red 1px;
+  padding: 10px;
+}
+button:hover{
+color:white;
+border: solid red 3px;
+}
+
+#display{
+  font-family: 'Days One';
+  font-size: 30px;
+  color: #FFFFFF;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 46.4px;
+  text-align: center;
+  margin: 80px;
+
+}
+img{
+  border: white solid 2px;
+}
+
+.hidden{
+  display: none;  
+}
+
