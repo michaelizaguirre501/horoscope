@@ -29,7 +29,7 @@ document.querySelector('#resetButton').addEventListener('click', reset)
 function dateCheck(){
     m = document.querySelector('#month').value.toUpperCase();
     finalDate.push(m);
-    d = parseInt(document.querySelector('#day').value);
+    d = Number((document.querySelector('#day').value));
     finalDate.push(d);
     
     console.log(finalDate);
