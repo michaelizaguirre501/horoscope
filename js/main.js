@@ -27,7 +27,7 @@ document.querySelector('#checkButton').addEventListener('click', dateCheck)
 document.querySelector('#resetButton').addEventListener('click', reset)
 
 function dateCheck(){
-    m = document.querySelector('#month').value.toUpperCase();
+    m = document.querySelector('#month').value.toUpperCase().trim();
     finalDate.push(m);
     d = Number((document.querySelector('#day').value));
     finalDate.push(d);
@@ -66,7 +66,7 @@ function dateCheck(){
     }
     
     
-        
+    finalDate.length=0;    
     return false;
 
 
